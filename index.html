@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chris Hulbert</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+<!-- modern-normalize: -->
+<style>*,::after,::before{box-sizing:border-box}html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';line-height:1.15;-webkit-text-size-adjust:100%;tab-size:4}body{margin:0}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:currentcolor}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}</style>
+
+<style>
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+:root { /* Light mode colors */
+    --theme: #0cc;
+    --theme-dim: color-mix(in srgb, var(--theme), black 20%);
+    --cta: var(--theme-dim);
+    --cta-hover: var(--theme);
+    --bg-color: white;
+    --fg-color: black;
+}
+@media (prefers-color-scheme: dark) {
+    :root { /* Dark mode */
+    --theme: #0ff;
+    --bg-color: black;
+    --fg-color: white;
+    }
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    padding: 1rem;
+}
+a {
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--cta);
+    color: black;
+    border-radius: 0.5rem;
+}
+a {
+    background-color: var(--cta);
+}
+a:hover {
+    background-color: var(--cta-hover);
+}
+a:active {
+    opacity: 0.5;
+}
+h1, h2, p {
+    margin: 1rem 0;
+}
+h2 {
+    margin-top: 2rem;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Chris Hulbert</h1>
+<p>Welcome to my eclectic collection of projects!</p>
+
+<h2>ScaleFX</h2>
+<p>ScaleFX is one of the best pixel-art upscaling algorithms. I've ported it to Rust and Javascript.
+With the Javascript widget, you can drag in a PNG and it will upscale it 9x.</p>
+<p>
+<a href="scalefx-js">ScaleFX-js widget</a>
+</p>
+<p>
+<a href="https://github.com/chrishulbert/scalefx-rs">ScaleFX-rs Rust port</a>
+</p>
+
+</body>
+</html>
