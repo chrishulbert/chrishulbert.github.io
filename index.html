@@ -34,7 +34,6 @@
 body {
     background-color: var(--bg-color);
     color: var(--fg-color);
-    padding: 1rem;
 }
 a {
     display: inline-block;
@@ -57,67 +56,109 @@ a:active {
 h1, h2, p {
     margin: 1rem 0;
 }
-h2 {
-    margin-top: 2rem;
+.section {
+    padding: 1rem;
+}
+.section:nth-child(even) {
+    background-color: #88888844;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Chris Hulbert</h1>
-<p>Welcome to my eclectic collection of projects!</p>
+<div class="section">
+    <h1>Chris Hulbert</h1>
+    <p>Welcome to my eclectic collection of widgets!</p>
+</div>
 
-<h2>ScaleFX</h2>
-<p>ScaleFX is one of the best pixel-art upscaling algorithms. I've ported it to Rust and Javascript.
-With the Javascript widget, you can drag in a PNG and it will upscale it 9x.</p>
-<p>
-<a href="scalefx-js">ScaleFX-js pixel art upscaler widget</a>
-</p>
-<p>
-<a href="https://github.com/chrishulbert/scalefx-rs">ScaleFX-rs Rust port</a>
-</p>
+<div class="section">
+    <h2>ScaleFX</h2>
+    <p>ScaleFX is one of the best pixel-art upscaling algorithms. I've ported it to Rust and Javascript.
+    With the Javascript widget, you can drag in a PNG and it will upscale it 9x.</p>
+    <p>
+    <a href="scalefx-js">ScaleFX-js pixel art upscaler widget</a>
+    </p>
+    <p>
+    <a href="https://github.com/chrishulbert/scalefx-rs">ScaleFX-rs Rust port</a>
+    </p>
+</div>
 
-<h2>Divine Bible</h2>
-<p>Divine Bible is a collection of topical Bible verses, a different one shown each day, along with nature photography background imagery:</p>
-<p>
-<a href="divine-bible">Divine Bible</a>
-</p>
+<div class="section">
+    <h2>Divine Bible</h2>
+    <p>Divine Bible is a collection of topical Bible verses, a different one shown each day, along with nature photography background imagery:</p>
+    <p>
+    <a href="divine-bible">Divine Bible</a>
+    </p>
+</div>
 
-<h2>AGI Quest Decoder</h2>
-<p>AGI Quest Decoder is a Rust program to decode the assets from 1980's Sierra games such as Space Quest 2, extracting imagery and animations:</p>
-<p>
-<a href="https://github.com/chrishulbert/agi-quest-decoder">AGI Quest Decoder</a>
-</p>
+<div class="section">
+    <h2>Dopefish Decoder</h2>
+    <p>Dopefish Decoder is a Rust program to decode the assets from Commander Keen 4-6, extracting maps and sprites:</p>
+    <p>
+    <a href="https://github.com/chrishulbert/dopefish-decoder">Dopefish Decoder</a>
+    </p>
+</div>
 
-<h2>SCI Quest Decoder</h2>
-<p>SCI Quest Decoder is a Rust program to decode the assets from late 1980's Sierra games such as Space Quest 3, extracting imagery and animations:</p>
-<p>
-<a href="https://github.com/chrishulbert/sci-quest-decoder">SCI Quest Decoder</a>
-</p>
+<div class="section">
+    <h2>Digger Decoder</h2>
+    <p>Digger Decoder is a Rust program to decode the assets from Lemmings, extracting maps, sprites, and animations:</p>
+    <p>
+    <a href="https://github.com/chrishulbert/digger-decoder">Digger Decoder</a>
+    </p>
+</div>
 
-<h2>Dopefish Decoder</h2>
-<p>Dopefish Decoder is a Rust program to decode the assets from Commander Keen 4-6, extracting maps and sprites:</p>
-<p>
-<a href="https://github.com/chrishulbert/dopefish-decoder">Dopefish Decoder</a>
-</p>
+<div class="section">
+    <h2>AGI Quest Decoder</h2>
+    <p>AGI Quest Decoder is a Rust program to decode the assets from 1980's Sierra games such as Space Quest 2, extracting imagery and animations:</p>
+    <p>
+    <a href="https://github.com/chrishulbert/agi-quest-decoder">AGI Quest Decoder</a>
+    </p>
+</div>
+    
+<div class="section">
+    <h2>SCI Quest Decoder</h2>
+    <p>SCI Quest Decoder is a Rust program to decode the assets from late 1980's Sierra games such as Space Quest 3, extracting imagery and animations:</p>
+    <p>
+    <a href="https://github.com/chrishulbert/sci-quest-decoder">SCI Quest Decoder</a>
+    </p>
+</div>
 
-<h2>Digger Decoder</h2>
-<p>Digger Decoder is a Rust program to decode the assets from Lemmings, extracting maps, sprites, and animations:</p>
-<p>
-<a href="https://github.com/chrishulbert/digger-decoder">Digger Decoder</a>
-</p>
+<div class="section">
+    <h2>Speedo</h2>
+    <p>Speedo is a simple GPS speedometer, which can be used to verify the accuracy of your car's instruments:</p>
+    <p>
+    <a href="speedo">Speedo</a>
+    </p>
+</div>
 
-<h2>Speedo</h2>
-<p>Speedo is a simple GPS speedometer, which can be used to verify the accuracy of your car's instruments:</p>
-<p>
-<a href="speedo">Speedo</a>
-</p>
+<div class="section">
+    <h2>Gondola</h2>
+    <p>Gondola is a TV and movies media centre, with apps for Apple TV, iPhone, iPad, and web.
+        Gondola has an emphasis on minimal system requirements on the server, as assets are pre-transcoded to HLS so serving and seeking are simple.</p>
+    <p>
+        <a href="https://github.com/chrishulbert/gondola">Gondola server</a>
+        <a href="https://github.com/chrishulbert/gondola-ios">iPhone client</a>
+        <a href="https://github.com/chrishulbert/gondola-appletv">AppleTV client</a>
+        <a href="https://github.com/chrishulbert/gondola-bookmarker">Bookmarking service</a>
+    </p>
+</div>
 
-<!-- Gondola -->
-<!-- Yousynth -->
-<!-- Cube -->
-<!-- Crypto -->
+<div class="section">
+    <h2>YouSynth</h2>
+    <p>YouSynth is a simple Javascript polyphonic FM synth keyboard. You can customise parameters to make your own sounds, connect it to a MIDI keyboard, and export sounds.</p>
+    <p>
+    <a href="you-synth">YouSynth</a>
+    </p>
+</div>
+
+<div class="section">
+    <h2>Cube Solver</h2>
+    <p>Cube Solver is a simple web UI for solving Rubik's cubes using the min2phase algorithm.</p>
+    <p>
+    <a href="cube">cube</a>
+    </p>
+</div>
 
 </body>
 </html>
