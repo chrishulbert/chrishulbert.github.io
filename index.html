@@ -62,6 +62,12 @@ h1, h2, p {
 .section:nth-child(even) {
     background-color: #88888844;
 }
+img {
+    max-width: min(100%, 40rem);
+    height: auto;
+    border: 1px solid #88888888;
+    border-radius: 1rem;
+}
 </style>
 </head>
 
@@ -74,13 +80,15 @@ h1, h2, p {
 
 <div class="section">
     <h2>Rally</h2>
-    <p>This is a tool for building real-life rallies (aka scavenger hunt) for eg church youth groups, or really anyone who wants to have a bit of fun with friends!</p>
+    <p><img src="rally.png" alt="Rally screenshot"></p>
+    <p>Rally is a tool for building real-life rallies (aka scavenger hunt) for eg church youth groups, or really anyone who wants to have a bit of fun with friends!</p>
     <p>An organiser uses the 'builder' tool to set the points and places and hints, generating a link for the rally for everyone to follow, presenting hints as people arrive at each location in order.</p>
     <p><a href="rally">Rally</a></p>
 </div>
 
 <div class="section">
     <h2>ScaleFX</h2>
+    <p><img src="scalefx.png" alt="ScaleFX screenshot"></p>
     <p>ScaleFX is one of the best pixel-art upscaling algorithms. I've ported it to Rust and Javascript.
     With the Javascript widget, you can drag in a PNG and it will upscale it 9x.</p>
     <p>
